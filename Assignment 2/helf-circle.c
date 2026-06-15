@@ -12,6 +12,7 @@ int main()
 
     printf("Area of the semicircle = %.2f\n", area);
     printf("Perimeter of the semicircle = %.2f\n", perimeter);
+    return 0;
 
     
 }

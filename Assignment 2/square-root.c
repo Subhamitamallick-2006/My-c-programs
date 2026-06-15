@@ -11,5 +11,5 @@ int main()
 
     printf("Square root = %.2f\n", root);
 
-    
+    return 0;
 }

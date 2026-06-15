@@ -19,5 +19,6 @@ int main()
 
     printf("area=%2f\n",area);
     printf("permiter=%2f\n",perimeter);
+    return 0;
 
 }

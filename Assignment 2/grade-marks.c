@@ -46,6 +46,6 @@ int main()
         default:
             printf("enter a valid marks");
     }
-
+return 0;
 
 }

@@ -19,5 +19,6 @@ int main()
 
     printf("Area of the right-angled triangle = %.2f\n", area);
     printf("Perimeter of the right-angled triangle = %.2f\n", perimeter);
+    return 0;
     
 }
