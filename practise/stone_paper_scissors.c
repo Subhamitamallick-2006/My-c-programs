@@ -4,9 +4,12 @@
 
 
 int main() {
+    int rounds;
     int user_choice, computer_choice;
-
+    
     srand(time(0));
+    printf("How many rounds do you want to play?\n" );
+    scanf("%d",&rounds);
 
     printf("=== Stone, Paper, Scissors Game ===\n");
     printf("1. Stone\n2. Paper\n3. Scissors\n");
