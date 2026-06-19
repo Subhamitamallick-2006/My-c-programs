@@ -10,7 +10,7 @@ int main() {
     srand(time(0));
     printf("How many rounds do you want to play?\n" );
     scanf("%d",&rounds);
-
+for(int i=0;i<rounds;i++){
     printf("=== Stone, Paper, Scissors Game ===\n");
     printf("1. Stone\n2. Paper\n3. Scissors\n");
     printf("Enter your choice (1, 2, or 3): ");
@@ -40,6 +40,6 @@ int main() {
     else {
         printf("Result: Computer Wins! 🤖\n");
     }
-
+}
     return 0;
 }
