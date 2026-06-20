@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int p=743126;
     for(int i=0;i<=999999;i++)
@@ -12,5 +12,7 @@ void main()
         }
         else
         printf("Number checked : %d\n",i);
-    }
+   
+  }
+return 0;
 }
