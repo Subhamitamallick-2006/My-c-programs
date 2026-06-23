@@ -11,5 +11,4 @@ void main()
     else
      printf("largest number=%d",c);
 
-    return 0;
 }
