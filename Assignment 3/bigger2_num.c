@@ -8,6 +8,4 @@ void main()
     printf("%d is big",a);
     else
     printf("%d is big",b);
-    
-    return 0;
 }
