@@ -4,7 +4,6 @@ void main()
 {
     printf("Enter 2 numbers for addition \n");
     int a,b;
-    scanf("%d",&a);
-    scanf("%d",&b);
+    scanf("%d%d",&a,&b);
     printf("The sum of the 2 numbers is : %d \n",a+b);
 }
