@@ -1,0 +1,76 @@
+int rowPins[8] = {2,3,4,5,6,7,8,9};
+
+int colPins[8] = {10,11,12,13,A0,A1,A2,A3};
+
+byte heartBig[8] = {
+  B00000000,
+  B01100110,
+  B11111111,
+  B11111111,
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000
+};
+
+byte heartSmall[8] = {
+  B00000000,
+  B00000000,
+  B00100100,
+  B01111110,
+  B00111100,
+  B00011000,
+  B00000000,
+  B00000000
+ 
+};
+
+byte blank[8] = {
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000
+};
+
+void setup() {
+  for (int i = 0; i < 8; i++) {
+    pinMode(rowPins[i], OUTPUT);
+    pinMode(colPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // lub
+  displayFrame(heartSmall);
+  delay(400);
+  displayFrame(heartBig);
+  delay(700);
+
+}
+
+void displayFrame(byte frame[8]) {
+  for (int refresh = 0; refresh < 300; refresh++) {
+    for (int row = 0; row < 8; row++) {
+
+      
+      for (int r = 0; r < 8; r++)
+        digitalWrite(rowPins[r], HIGH);
+
+      
+      for (int col = 0; col < 8; col++) {
+        digitalWrite(
+          colPins[col],
+          bitRead(frame[row], col) ? HIGH : LOW
+        );
+      }
+
+    
+      digitalWrite(rowPins[row], LOW);
+  
+    }
+  }
+}
